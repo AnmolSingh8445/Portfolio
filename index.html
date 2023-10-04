@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <section id="home">
+    <header>
+        <nav>
+            <div class="logo">
+                <p>Anmol Singh</p>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button id="search-button">Hire me</button></li>
+            </ul>
+        </nav>
+        <div class="container">
+
+            <div class="left">
+                <h2>Hi, I'm Anmol Singh</h2>
+                <h1>Freelancer</h1>
+                I love web development,designing and editing (video+photo) and have been working
+                on my portfolio since 2022. I can give your business a new creative start right away!
+                <br><br><br><br>
+                <div>
+                    <a href="#" id="hire">Hire me</a>
+                    <a href="#" id="myp">portfolio</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="anmol1.png" height="530px">
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+    </section>
+    <section id="about">
+    <div id="bio">
+        <div class="left2">
+            <img src="anmol2.png" height="600px">
+        </div>
+        <div class="right2">
+            <h1 class="about">ABOUT</h1>
+            <P class="text">I'm a skilled web developer and editor with a passion for crafting exceptional online experiences.
+               Proficient in various programming languages and web technologies, I create user-friendly websites
+               that seamlessly blend aesthetics and functionality. As an editor, I refine content for clarity and
+               coherence,ensuring it engages and informs effectively. Committed to staying current with industry trends, I
+               thrive sin the dynamic world of digital creativity.</P>
+               <div class="about-details-container">
+                <div class="about-containers">
+                  <div class="details-container">
+                    <img src="experience.png" alt="Experience icon" height="50px" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>2+ month <br />Web Development</p>
+                  </div>
+                  <div class="details-container">
+                    <img src="education.png" alt="Education icon" height="50px" class="icon"/>
+                    <h3>Education</h3>
+                    <p>B.Tech<br>(CSE)</p>
+                  </div>
+                </div>
+        </div>
+        </section>
+        <section id="services">
+            <h2 class="ser">Services</h2>
+            <div class="one">
+            <div class="service">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I specialize in front-end and back-end web development. I can create responsive and user-friendly websites tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App Development</h3>
+                <p>I design and develop mobile applications for both iOS and Android platforms using the latest technologies and best practices.</p>
+            </div>
+            </div>
+            <div class="two">
+            <div class="service">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphics Designing</h3>
+                <p>I create stunning visual designs for various purposes, including logos, banners, and promotional materials. Let me bring your ideas to life.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-edit"></i>
+                <h3>Editing</h3>
+                <p>I provide editing services for written content, ensuring accuracy, clarity, and readability. Your content will shine with my editing expertise.</p>
+            </div>
+            </div>
+        </section>
+    </div>
+    <div class="container1">
+        <h1 class="cont">Contact Me</h1>
+        <form class="contact-form" action="process.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/your_instagram" target="_blank"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/your_facebook" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://mail.google.com/" target="_blank"><img src="email.png" alt="gmail"></a>
+            <a href="https://www.linkedin.com/in/your_linkedin" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+</body>
+
+</html>
