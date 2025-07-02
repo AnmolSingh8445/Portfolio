@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Anmol Singh</title>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/progress-charts.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+
+    <!-- for adding animation to website we have use AOS library  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+  <!-- navbar starts -->
+  <section id="home">
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo-toggle-row">
+            <div class="logo">
+              <i class="fa-solid fa-a"></i>
+              <div class="logo-text">Anmol Singh</div>
+            </div>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <nav>
+            <ul class="navlinks">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#service" class="nav-link">Service</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="hero-container">
+          <div class="hero-pic zoom-animate">
+            <img src="images/main_photo.jpg" alt="profile pic">
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+            <h1>Anmol Singh</h1>
+            <p> Creative and detail-oriented web developer skilled in HTML, CSS, JavaScript,
+              and MERN stack. Experienced in building responsive, user-friendly websites
+              and applications, ensuring seamless functionality and exceptional user experience.
+            </p>
+            <div class="button-group">
+              <a href="Entry Level Web Developer Resume.pdf" class="button primary" download>Download CV</a>
+              <a href="#contact" class="button">Contact</a>
+            </div>
+            <div class="social">
+              <a href="https://www.facebook.com/anmolchaudhary.chaudhary.169" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/anmol-singh-13a99528a" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/anmol.sin84?igsh=MWFiYTF0aDlzM3p0dw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@BadStar_No_1" aria-label="YouTube"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- home section ends here -->
+
+    <!-- Expertise Section -->
+    <section class="expertise-section" id="service">
+      <div class="heading center-text">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br> Digital Services
+        </h3>
+      </div>
+      <div class="flex-row gap-lg">
+        <div class="expertise-col" data-aos="fade-up">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/pic4.png" class="service-icon" alt="Web Design">
+            </div>
+            <div class="service-content">
+              <h4>Web Design</h4>
+              <p class="muted-text">
+                Web design focuses on creating engaging, responsive, and accessible digital user experiences.
+              </p>
+              <a href="#" class="service-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="expertise-col" data-aos="fade-up">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/pic3.png" class="service-icon" alt="Web Development">
+            </div>
+            <div class="service-content">
+              <h4>Web Development</h4>
+              <p class="muted-text">
+                Web development involves building, coding, and maintaining functional, dynamic online platforms.
+              </p>
+              <a href="#" class="service-link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="expertise-col" data-aos="fade-up">
+          <div class="service-card">
+            <div class="service-img">
+              <img src="images/pic2.png" class="service-icon" alt="Debugging">
+            </div>
+            <div class="service-content">
+              <h4>Debugging</h4>
+              <p class="muted-text">
+                Debugging involves identifying, analyzing, and fixing errors or issues in code effectively.
+              </p>
+              <a href="#" class="service-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Modal for Read More (handled by JS, styles in CSS) -->
+    <!-- skill section starts -->
+    <section class="skills-section" id="about">
+      <div class="flex-row gap-lg">
+        <div class="skills-progress" data-aos="slide-right">
+          <div class="progress-col">
+            <div class="progress-card">
+              <div class="circular-progress html-css">
+                <span class="progress-value html-progress">0%</span>
+              </div>
+              <span class="progress-label">HTML &amp; CSS</span>
+            </div>
+          </div>
+          <div class="progress-col">
+            <div class="progress-card">
+              <div class="circular-progress javascript">
+                <span class="progress-value javascript-progress">0%</span>
+              </div>
+              <span class="progress-label">JavaScript</span>
+            </div>
+          </div>
+          <div class="progress-col">
+            <div class="progress-card">
+              <div class="circular-progress php">
+                <span class="progress-value php-progress">0%</span>
+              </div>
+              <span class="progress-label">Nodejs</span>
+            </div>
+          </div>
+          <div class="progress-col">
+            <div class="progress-card">
+              <div class="circular-progress reactjs">
+                <span class="progress-value reactjs-progress">0%</span>
+              </div>
+              <span class="progress-label">ReactJS</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-detail" data-aos="slide-left">
+          <div class="heading">
+            <small>My Skills</small>
+            <h3>Beautiful &amp; Unique Digital Experiences</h3>
+            <p class="muted-text">
+              Proficient in HTML, CSS, JavaScript, and responsive design, skilled in frameworks like React and Node.js, experienced in debugging, cross-browser compatibility, and optimizing performance for seamless user experiences.
+            </p>
+            <p class="muted-text">
+              Proficient in Java, object-oriented design, data structures, algorithms, and optimizing code for performance and efficiency
+            </p>
+            <a href="Entry Level Web Developer Resume.pdf" class="button primary" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="heading center-text pt-lg">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+      <div id="portfolio-filter" class="center-text mt-md">
+        <button type="button" class="filter-btn" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="webapp">Web App</button>
+        <button type="button" class="filter-btn" data-filter="website">Website</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="portfolio-grid">
+          <div class="portfolio-card game all" data-aos="fade-up">
+            <div class="portfolio-img">
+              <img src="images/leetmetric.png" alt="leetmetric">
+            </div>
+            <div class="portfolio-content center-text">
+              <h4>LeetMatric</h4>
+              <span class="portfolio-badge">HTML &amp; CSS</span>
+              <span class="portfolio-badge">JavaScript</span>
+              <span class="portfolio-badge">WebApp</span>
+              <a href="https://github.com/AnmolSingh8445/Leet-Matric-Project" class="portfolio-link">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card all" data-aos="fade-up">
+            <div class="portfolio-img">
+              <img src="images/currencyConverter.png" alt="currencyConverter">
+            </div>
+            <div class="portfolio-content center-text">
+              <h4>currency Converter</h4>
+              <span class="portfolio-badge">HTML &amp; CSS</span>
+              <span class="portfolio-badge">JavaScript</span>
+              <span class="portfolio-badge">WebApp</span>
+              <a href="https://github.com/AnmolSingh8445/Currency-Converter" class="portfolio-link">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card webapp all" data-aos="fade-up">
+            <div class="portfolio-img">
+              <img src="images/a12.jpg" alt="Weather Forecasting">
+            </div>
+            <div class="portfolio-content center-text">
+              <h4>Weather Forecasting</h4>
+              <span class="portfolio-badge">HTML &amp; CSS</span>
+              <span class="portfolio-badge">JavaScript</span>
+              <span class="portfolio-badge">WebApp</span>
+              <a href="https://github.com/AnmolSingh8445/Weather-App" class="portfolio-link">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card game all" data-aos="fade-up">
+            <div class="portfolio-img">
+              <img src="images/globestay.png" alt="globestay">
+            </div>
+            <div class="portfolio-content center-text">
+              <h4>GlobeStay Website</h4>
+              <span class="portfolio-badge">HTML &amp; CSS</span>
+              <span class="portfolio-badge">JavaScript</span>
+              <span class="portfolio-badge">website</span>
+              <a href="https://github.com/AnmolSingh8445/GlobeStay" class="portfolio-link">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card website all" data-aos="fade-up">
+            <div class="portfolio-img">
+              <img src="images/a13.jpg" alt="Netflix Clone">
+            </div>
+            <div class="portfolio-content center-text">
+              <h4>Netflix Clone</h4>
+              <span class="portfolio-badge">HTML &amp; CSS</span>
+              <span class="portfolio-badge">JavaScript</span>
+              <span class="portfolio-badge">Website</span>
+              <a href="https://github.com/AnmolSingh8445/Netflix-Clone" class="portfolio-link">Read More</a>
+            </div>
+          </div>
+          <div class="portfolio-card website all" data-aos="fade-up">
+            <div class="portfolio-img">
+              <img src="images/a11.jpg" alt="Apana College Clone">
+            </div>
+            <div class="portfolio-content center-text">
+              <h4>Apana College Clone</h4>
+              <span class="portfolio-badge">HTML &amp; CSS</span>
+              <span class="portfolio-badge">JavaScript</span>
+              <span class="portfolio-badge">Website</span>
+              <a href="https://github.com/AnmolSingh8445/apna-college-clone" class="portfolio-link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="heading center-text">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="flex-row gap-lg">
+        <div class="contact-details" data-aos="slide-right">
+          <div class="contact-row"><i class="fa-solid fa-location-dot"></i><span>Aligarh, Uttar Pradesh</span></div>
+          <div class="contact-row"><i class="fa-solid fa-phone"></i><span>+91 7895035703</span></div>
+          <div class="contact-row"><i class="fa-solid fa-envelope"></i><span>anmolsingh8445700@gmail.com</span></div>
+          <div class="contact-row"><i class="fa-solid fa-globe"></i><span>Comming Soon...</span></div>
+        </div>
+        <div class="contact-form-wrap" data-aos="slide-left">
+          <form id="submit-to-google-sheet">
+            <div class="contact-form">
+              <input type="text" class="input-field" id="name" placeholder="Name" name="name">
+              <input type="email" class="input-field" id="email" placeholder="E-mail" name="email">
+              <input type="text" class="input-field" id="mobile" placeholder="Mobile No." name="mobile">
+              <textarea class="input-field" id="message" placeholder="Message" rows="5" name="message"></textarea>
+              <button type="submit" class="button primary" id="submitButton">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top-btn" id="btn-back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Footer Section -->
+    <footer class="footer-section center-text">
+      <h3 class="footer-title" data-aos="fade-up">Portfolio</h3>
+      <div class="footer-links" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <span class="footer-divider"></span>
+        <a href="#about">About</a>
+        <span class="footer-divider"></span>
+        <a href="#service">Service</a>
+        <span class="footer-divider"></span>
+        <a href="#portfolio">Portfolio</a>
+        <span class="footer-divider"></span>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social" data-aos="fade-up">
+        <a href="#" class="footer-social-btn" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="#" class="footer-social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="footer-social-btn" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+      </div>
+      <hr class="footer-divider-line">
+      <p class="footer-copyright">Copyright 2025 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Initialize AOS library and handle navbar toggle -->
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+      document.addEventListener('DOMContentLoaded', function() {
+        var togglebtn = document.querySelector('.togglebtn');
+        var nav = document.querySelector('.navlinks');
+        if (togglebtn && nav) {
+          togglebtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('click');
+            nav.classList.toggle('open');
+          });
+          document.addEventListener('click', function(e) {
+            if (nav.classList.contains('open') && !nav.contains(e.target) && !togglebtn.contains(e.target)) {
+              nav.classList.remove('open');
+              togglebtn.classList.remove('click');
+            }
+          });
+        }
+      });
+    </script>
+    <!-- External JS Libraries and Custom Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/progress-charts.js"></script>
+
+  </body>
+</html>
